@@ -1,30 +1,114 @@
 import { BrowserModule } from '@angular/platform-browser';
-import { ErrorHandler, NgModule } from '@angular/core';
-import { IonicApp, IonicErrorHandler, IonicModule } from 'ionic-angular';
+import { HttpModule } from '@angular/http';
+import { NgModule, ErrorHandler } from '@angular/core';
+import { IonicApp, IonicModule, IonicErrorHandler } from 'ionic-angular';
+import { InAppBrowser } from '@ionic-native/in-app-browser';
 import { SplashScreen } from '@ionic-native/splash-screen';
-import { StatusBar } from '@ionic-native/status-bar';
+import { IonicStorageModule } from '@ionic/storage';
+import { ConferenceApp } from './app.component';
+import { AboutPage } from '../pages/about/about';
+import { LoginPage } from '../pages/login/login';
+import { MapPage } from '../pages/map/map';
+import { PostPage } from '../pages/post/post';
+import { CategoryPostPage } from '../pages/category-post/category-post';
+import { PopoverPage } from '../pages/about-popover/about-popover';
+import { AccountPage } from '../pages/account/account';
+import { PostsPage } from '../pages/posts/posts';
+import { ScheduleFilterPage } from '../pages/schedule-filter/schedule-filter';
+import { SignupPage } from '../pages/signup/signup';
+import { TabsPage } from '../pages/tabs-page/tabs-page';
+import { TutorialPage } from '../pages/tutorial/tutorial';
+import { SearchPage } from '../pages/search/search';
+import { VideoPage } from '../pages/playlist-page/playlist-page';
+import { PlaylistVideoPage } from '../pages/playlist-videos/playlist-videos';
 
-import { MyApp } from './app.component';
-import { HomePage } from '../pages/home/home';
+
+import { Service } from '../providers/service';
+import { Functions } from '../providers/functions';
+import { UserData } from '../providers/user-data';
+import { Facebook } from '@ionic-native/facebook';
+import { GooglePlus } from '@ionic-native/google-plus';
+import { EmailComposer } from '@ionic-native/email-composer';
+import { OneSignal } from '@ionic-native/onesignal';
+import { SocialSharing } from '@ionic-native/social-sharing';
+import { KeysPipe } from '../providers/pipe';
+import { AppRate } from '@ionic-native/app-rate';
+import { YoutubePipe } from '../providers/youtube/youtube';
+
+
 
 @NgModule({
   declarations: [
-    MyApp,
-    HomePage
+    ConferenceApp,
+    AboutPage,
+    AccountPage,
+    LoginPage,
+    MapPage,
+    PostPage,
+    PopoverPage,
+    PostsPage,
+    ScheduleFilterPage,
+    SignupPage,
+    TabsPage,
+    TutorialPage,
+    CategoryPostPage,
+    KeysPipe,
+    SearchPage,
+    VideoPage,
+    YoutubePipe,
+    PlaylistVideoPage,
   ],
   imports: [
     BrowserModule,
-    IonicModule.forRoot(MyApp)
+    HttpModule,
+    IonicModule.forRoot(ConferenceApp, {}, {
+      links: [
+        { component: TabsPage, name: 'TabsPage', segment: 'tabs-page' },
+        { component: PostsPage, name: 'Schedule', segment: 'schedule' },
+        { component: LoginPage, name: 'LoginPage', segment: 'login' },
+        { component: ScheduleFilterPage, name: 'ScheduleFilter', segment: 'scheduleFilter' }, 
+        { component: MapPage, name: 'Map', segment: 'map' },   
+        { component: AboutPage, name: 'About', segment: 'about' },
+        { component: TutorialPage, name: 'Tutorial', segment: 'tutorial' },
+        { component: AccountPage, name: 'AccountPage', segment: 'account' },
+        { component: SignupPage, name: 'SignupPage', segment: 'signup' }
+      ]
+    }),
+    IonicStorageModule.forRoot()
   ],
   bootstrap: [IonicApp],
   entryComponents: [
-    MyApp,
-    HomePage
+    ConferenceApp,
+    AboutPage,
+    LoginPage,
+    AccountPage,
+    PostPage,
+    PopoverPage,
+    MapPage,
+    PostsPage,
+    ScheduleFilterPage,
+    SignupPage,
+    TabsPage,
+    TutorialPage,
+    CategoryPostPage,
+    SearchPage,
+    VideoPage,
+    PlaylistVideoPage
   ],
   providers: [
-    StatusBar,
+    { provide: ErrorHandler, useClass: IonicErrorHandler },
+    Service,
+    UserData,
+    InAppBrowser,
     SplashScreen,
-    {provide: ErrorHandler, useClass: IonicErrorHandler}
+    Functions,
+    EmailComposer,
+    Facebook,
+    GooglePlus,
+    OneSignal,
+    SocialSharing,
+    AppRate
+
   ]
 })
-export class AppModule {}
+export class AppModule { }
