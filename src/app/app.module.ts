@@ -11,6 +11,7 @@ import { LoginPage } from '../pages/login/login';
 import { MapPage } from '../pages/map/map';
 import { PostPage } from '../pages/post/post';
 import { CategoryPostPage } from '../pages/category-post/category-post';
+import { PrimiPiattiPage } from '../pages/primi-piatti/primi-piatti';
 import { PopoverPage } from '../pages/about-popover/about-popover';
 import { AccountPage } from '../pages/account/account';
 import { PostsPage } from '../pages/posts/posts';
@@ -34,7 +35,9 @@ import { SocialSharing } from '@ionic-native/social-sharing';
 import { KeysPipe } from '../providers/pipe';
 import { AppRate } from '@ionic-native/app-rate';
 import { YoutubePipe } from '../providers/youtube/youtube';
-
+import { StatusBar } from '@ionic-native/status-bar';
+// Custom components
+import { SideMenuContentComponent } from '../shared/side-menu-content/side-menu-content.component';
 
 
 @NgModule({
@@ -57,6 +60,8 @@ import { YoutubePipe } from '../providers/youtube/youtube';
     VideoPage,
     YoutubePipe,
     PlaylistVideoPage,
+    PrimiPiattiPage,
+    SideMenuContentComponent
   ],
   imports: [
     BrowserModule,
@@ -71,7 +76,8 @@ import { YoutubePipe } from '../providers/youtube/youtube';
         { component: AboutPage, name: 'About', segment: 'about' },
         { component: TutorialPage, name: 'Tutorial', segment: 'tutorial' },
         { component: AccountPage, name: 'AccountPage', segment: 'account' },
-        { component: SignupPage, name: 'SignupPage', segment: 'signup' }
+        { component: SignupPage, name: 'SignupPage', segment: 'signup' },
+        { component: PrimiPiattiPage, name: 'PrimiPiattiPage', segment: 'primi-piatti' }
       ]
     }),
     IonicStorageModule.forRoot()
@@ -93,7 +99,8 @@ import { YoutubePipe } from '../providers/youtube/youtube';
     CategoryPostPage,
     SearchPage,
     VideoPage,
-    PlaylistVideoPage
+    PlaylistVideoPage,
+    PrimiPiattiPage
   ],
   providers: [
     { provide: ErrorHandler, useClass: IonicErrorHandler },
@@ -107,7 +114,8 @@ import { YoutubePipe } from '../providers/youtube/youtube';
     GooglePlus,
     OneSignal,
     SocialSharing,
-    AppRate
+    AppRate,
+    StatusBar
 
   ]
 })

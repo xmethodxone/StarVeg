@@ -1,10 +1,8 @@
 {
   "name": "StarVeg",
-  "app_id": "6350ae0f",
+  "app_id": "c0707db5",
   "type": "ionic-angular",
   "integrations": {
     "cordova": {}
   }
 }
-
-
