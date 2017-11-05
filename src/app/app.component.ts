@@ -4,7 +4,6 @@ import { SplashScreen } from '@ionic-native/splash-screen';
 import { Storage } from '@ionic/storage';
 import { AccountPage } from '../pages/account/account';
 import { LoginPage } from '../pages/login/login';
-import { AboutPage } from '../pages/about/about';
 import { SignupPage } from '../pages/signup/signup';
 import { TabsPage } from '../pages/tabs-page/tabs-page';
 import { TutorialPage } from '../pages/tutorial/tutorial';
@@ -14,7 +13,7 @@ import { UserData } from '../providers/user-data';
 import { EmailComposer } from '@ionic-native/email-composer';
 import { VideoPage } from '../pages/playlist-page/playlist-page';
 import { PrimiPiattiPage } from '../pages/primi-piatti/primi-piatti';
-import { PrimiPiattiPage } from '../pages/primi-piatti/home';
+
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SideMenuSettings } from '../shared/side-menu-content/side-menu-content.component';
@@ -120,14 +119,12 @@ private initializeOptions(): void {
 
     // Load simple menu options
     // ------------------------------------------
-    this.options.push({
+    /*this.options.push({
       iconName: 'home',
       displayName: 'Home',
       component: TabsPage,
-      
-      // This option is already selected
-      selected: true
-    });
+      selected: true// This option is already selected
+    });*/
 
     this.options.push({
       displayName: 'Angolo Vegano',
@@ -203,19 +200,13 @@ private initializeOptions(): void {
       ]
     });
 
-    this.options.push({
-      iconName: 'logo-youtube',
-      displayName: 'Video Youtube',
-      component: VideoPage
-    });
-
 
 
 
 
     // Load special options
     // -----------------------------------------------
-    this.options.push({
+    /*this.options.push({
       displayName: 'Special options',
       subItems: [
         {
@@ -241,7 +232,10 @@ private initializeOptions(): void {
           }
         }
       ]
-    });
+    });*/
+
+
+
   }
 
   public selectOption(option: MenuOptionModel): void {
