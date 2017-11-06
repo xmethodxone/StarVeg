@@ -13,6 +13,9 @@ import { UserData } from '../providers/user-data';
 import { EmailComposer } from '@ionic-native/email-composer';
 import { VideoPage } from '../pages/playlist-page/playlist-page';
 import { PrimiPiattiPage } from '../pages/primi-piatti/primi-piatti';
+import { AngoloCrudistaPage } from '../pages/angolo-crudista/angolo-crudista';
+import { AngoloVeganoPage } from '../pages/angolo-vegano/angolo-vegano';
+import { BricioleNewsPage } from '../pages/briciole-news/briciole-news';
 
 
 import { StatusBar } from '@ionic-native/status-bar';
@@ -128,17 +131,17 @@ private initializeOptions(): void {
 
     this.options.push({
       displayName: 'Angolo Vegano',
-      component: PrimiPiattiPage
+      component: AngoloVeganoPage
     });
 
     this.options.push({
       displayName: 'Angolo Crudista',
-      component: PrimiPiattiPage
+      component: AngoloCrudistaPage
     });
 
     this.options.push({
       displayName: 'Briciole',
-      component: PrimiPiattiPage
+      component: BricioleNewsPage
     });
 
     
@@ -250,7 +253,7 @@ private initializeOptions(): void {
         window.open(url, '_blank');
       } else {
         // Redirect to the selected page
-        this.nav.setRoot(option.component || PrimiPiattiPage, { 'title': option.displayName });
+        this.nav.setRoot(option.component || TabsPage, { 'title': option.displayName });
       }
     });
   }
@@ -302,6 +305,18 @@ private initializeOptions(): void {
     this.nav.push(PrimiPiattiPage);
   }
 
+  goAngoloCrudista(){
+    this.nav.push(AngoloCrudistaPage);
+  }
+
+  goBricioleNews(){
+    this.nav.push(BricioleNewsPage);
+  }
+
+
+  goAngoloVegano(){
+    this.nav.push(AngoloVeganoPage);
+  }
 
   openPage(page: PageInterface) {
     let params = {};

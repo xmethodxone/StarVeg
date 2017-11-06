@@ -12,6 +12,9 @@ import { MapPage } from '../pages/map/map';
 import { PostPage } from '../pages/post/post';
 import { CategoryPostPage } from '../pages/category-post/category-post';
 import { PrimiPiattiPage } from '../pages/primi-piatti/primi-piatti';
+import { AngoloCrudistaPage } from '../pages/angolo-crudista/angolo-crudista';
+import { BricioleNewsPage } from '../pages/briciole-news/briciole-news';
+import { AngoloVeganoPage } from '../pages/angolo-vegano/angolo-vegano';
 import { PopoverPage } from '../pages/about-popover/about-popover';
 import { AccountPage } from '../pages/account/account';
 import { PostsPage } from '../pages/posts/posts';
@@ -61,6 +64,9 @@ import { SideMenuContentComponent } from '../shared/side-menu-content/side-menu-
     YoutubePipe,
     PlaylistVideoPage,
     PrimiPiattiPage,
+    AngoloCrudistaPage,
+    AngoloVeganoPage,
+    BricioleNewsPage,
     SideMenuContentComponent
   ],
   imports: [
@@ -100,7 +106,10 @@ import { SideMenuContentComponent } from '../shared/side-menu-content/side-menu-
     SearchPage,
     VideoPage,
     PlaylistVideoPage,
-    PrimiPiattiPage
+    PrimiPiattiPage,
+    AngoloCrudistaPage,
+    AngoloVeganoPage,
+    BricioleNewsPage
   ],
   providers: [
     { provide: ErrorHandler, useClass: IonicErrorHandler },

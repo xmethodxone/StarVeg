@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='utf-8'?>
-<widget id="io.ionic.starter" version="0.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
-    <name>MyApp</name>
+<widget id="com.dodesign.starveg" version="0.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+    <name>StarVeg</name>
     <description>An awesome Ionic/Cordova app.</description>
     <author email="hi@ionicframework" href="http://ionicframework.com/">Ionic Framework Team</author>
     <content src="index.html" />
@@ -88,7 +88,7 @@
         <variable name="APP_NAME" value="StarVeg" />
     </plugin>
     <plugin name="cordova-plugin-googleplus" spec="^5.1.1">
-        <variable name="REVERSED_CLIENT_ID" value="​762099317433-ggij3fg8r4ht4eslcgnbdbquq0n75e4v.apps.googleusercontent.com" />
+        <variable name="REVERSED_CLIENT_ID" value="513141717663-ofgqda4os70ajoj3ic1cdl70vriae2j9.apps.googleusercontent.com" />
     </plugin>
     <plugin name="cordova-plugin-email-composer" spec="^0.8.11" />
     <plugin name="ionic-plugin-keyboard" spec="^2.2.1" />
