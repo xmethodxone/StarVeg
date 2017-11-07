@@ -11,10 +11,19 @@ import { LoginPage } from '../pages/login/login';
 import { MapPage } from '../pages/map/map';
 import { PostPage } from '../pages/post/post';
 import { CategoryPostPage } from '../pages/category-post/category-post';
+import { ContorniSfiziosiPage } from '../pages/contorni-sfiziosi/contorni-sfiziosi';
+import { DolciVeganPage } from '../pages/dolci-vegan/dolci-vegan';
 import { PrimiPiattiPage } from '../pages/primi-piatti/primi-piatti';
+import { SecondiPiattiPage } from '../pages/secondi-piatti/secondi-piatti';
 import { AngoloCrudistaPage } from '../pages/angolo-crudista/angolo-crudista';
 import { BricioleNewsPage } from '../pages/briciole-news/briciole-news';
 import { AngoloVeganoPage } from '../pages/angolo-vegano/angolo-vegano';
+import { ZuppeMinestrePage } from '../pages/zuppe-minestre/zuppe-minestre';
+import { AntipastiSfiziosiPage } from '../pages/antipasti-sfiziosi/antipasti-sfiziosi';
+import { RimediDecottiPage } from '../pages/rimedi-decotti/rimedi-decotti';
+import { RimediInfusiPage } from '../pages/rimedi-infusi/rimedi-infusi';
+import { RimediMaceratiPage } from '../pages/rimedi-macerati/rimedi-macerati';
+import { RimediTisanePage } from '../pages/rimedi-tisane/rimedi-tisane';
 import { PopoverPage } from '../pages/about-popover/about-popover';
 import { AccountPage } from '../pages/account/account';
 import { PostsPage } from '../pages/posts/posts';
@@ -64,9 +73,18 @@ import { SideMenuContentComponent } from '../shared/side-menu-content/side-menu-
     YoutubePipe,
     PlaylistVideoPage,
     PrimiPiattiPage,
+    SecondiPiattiPage,
     AngoloCrudistaPage,
     AngoloVeganoPage,
+    ZuppeMinestrePage,
+    AntipastiSfiziosiPage,
     BricioleNewsPage,
+    ContorniSfiziosiPage,
+    DolciVeganPage,
+    RimediDecottiPage,
+    RimediInfusiPage,
+    RimediMaceratiPage,
+    RimediTisanePage,
     SideMenuContentComponent
   ],
   imports: [
@@ -107,8 +125,17 @@ import { SideMenuContentComponent } from '../shared/side-menu-content/side-menu-
     VideoPage,
     PlaylistVideoPage,
     PrimiPiattiPage,
+    SecondiPiattiPage,
     AngoloCrudistaPage,
     AngoloVeganoPage,
+    AntipastiSfiziosiPage,
+    ZuppeMinestrePage,
+    ContorniSfiziosiPage,
+    DolciVeganPage,
+    RimediDecottiPage,
+    RimediInfusiPage,
+    RimediMaceratiPage,
+    RimediTisanePage,
     BricioleNewsPage
   ],
   providers: [

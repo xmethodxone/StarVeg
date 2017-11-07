@@ -13,9 +13,18 @@ import { UserData } from '../providers/user-data';
 import { EmailComposer } from '@ionic-native/email-composer';
 import { VideoPage } from '../pages/playlist-page/playlist-page';
 import { PrimiPiattiPage } from '../pages/primi-piatti/primi-piatti';
+import { SecondiPiattiPage } from '../pages/secondi-piatti/secondi-piatti';
+import { ContorniSfiziosiPage } from '../pages/contorni-sfiziosi/contorni-sfiziosi';
+import { DolciVeganPage } from '../pages/dolci-vegan/dolci-vegan';
 import { AngoloCrudistaPage } from '../pages/angolo-crudista/angolo-crudista';
 import { AngoloVeganoPage } from '../pages/angolo-vegano/angolo-vegano';
+import { ZuppeMinestrePage } from '../pages/zuppe-minestre/zuppe-minestre';
+import { AntipastiSfiziosiPage } from '../pages/antipasti-sfiziosi/antipasti-sfiziosi';
 import { BricioleNewsPage } from '../pages/briciole-news/briciole-news';
+import { RimediDecottiPage } from '../pages/rimedi-decotti/rimedi-decotti';
+import { RimediInfusiPage } from '../pages/rimedi-infusi/rimedi-infusi';
+import { RimediMaceratiPage } from '../pages/rimedi-macerati/rimedi-macerati';
+import { RimediTisanePage } from '../pages/rimedi-tisane/rimedi-tisane';
 
 
 import { StatusBar } from '@ionic-native/status-bar';
@@ -154,11 +163,11 @@ private initializeOptions(): void {
       subItems: [
         {
           displayName: 'Antipasti',
-          component: PrimiPiattiPage
+          component: AntipastiSfiziosiPage
         },
         {
           displayName: 'Zuppe e Minestre',
-          component: PrimiPiattiPage
+          component: ZuppeMinestrePage
         },
         {
           displayName: 'Primi',
@@ -166,15 +175,15 @@ private initializeOptions(): void {
         },
         {
           displayName: 'Secondi',
-          component: PrimiPiattiPage
+          component: SecondiPiattiPage
         },
         {
           displayName: 'Contorni',
-          component: PrimiPiattiPage
+          component: ContorniSfiziosiPage
         },
         {
           displayName: 'Dolci',
-          component: PrimiPiattiPage
+          component: DolciVeganPage
         }
       ]
     });
@@ -186,19 +195,19 @@ private initializeOptions(): void {
       subItems: [
         {
           displayName: 'Infusi',
-          component: PrimiPiattiPage
+          component: RimediInfusiPage
         },
         {
           displayName: 'Decotti',
-          component: PrimiPiattiPage
+          component: RimediDecottiPage
         },
         {
           displayName: 'Macerati',
-          component: PrimiPiattiPage
+          component: RimediMaceratiPage
         },
         {
           displayName: 'Tisane',
-          component: PrimiPiattiPage
+          component: RimediTisanePage
         }
       ]
     });
@@ -305,6 +314,11 @@ private initializeOptions(): void {
     this.nav.push(PrimiPiattiPage);
   }
 
+  goSecondiPiatti(){
+    this.nav.push(SecondiPiattiPage);
+  }
+
+
   goAngoloCrudista(){
     this.nav.push(AngoloCrudistaPage);
   }
@@ -316,6 +330,14 @@ private initializeOptions(): void {
 
   goAngoloVegano(){
     this.nav.push(AngoloVeganoPage);
+  }
+
+  goAntipastiSfiziosi(){
+    this.nav.push(AntipastiSfiziosiPage);
+  }
+
+  goZuppeMinestre(){
+    this.nav.push(ZuppeMinestrePage);
   }
 
   openPage(page: PageInterface) {
