@@ -10,6 +10,7 @@ import { AboutPage } from '../pages/about/about';
 import { LoginPage } from '../pages/login/login';
 import { MapPage } from '../pages/map/map';
 import { PostPage } from '../pages/post/post';
+import { CustomDetailPage } from '../pages/custom-detail/custom-detail';
 import { CategoryPostPage } from '../pages/category-post/category-post';
 import { ContorniSfiziosiPage } from '../pages/contorni-sfiziosi/contorni-sfiziosi';
 import { DolciVeganPage } from '../pages/dolci-vegan/dolci-vegan';
@@ -24,6 +25,7 @@ import { RimediDecottiPage } from '../pages/rimedi-decotti/rimedi-decotti';
 import { RimediInfusiPage } from '../pages/rimedi-infusi/rimedi-infusi';
 import { RimediMaceratiPage } from '../pages/rimedi-macerati/rimedi-macerati';
 import { RimediTisanePage } from '../pages/rimedi-tisane/rimedi-tisane';
+import { CustomPostPage } from '../pages/custom-post/custom-post';
 import { PopoverPage } from '../pages/about-popover/about-popover';
 import { AccountPage } from '../pages/account/account';
 import { PostsPage } from '../pages/posts/posts';
@@ -85,6 +87,8 @@ import { SideMenuContentComponent } from '../shared/side-menu-content/side-menu-
     RimediInfusiPage,
     RimediMaceratiPage,
     RimediTisanePage,
+    CustomPostPage,
+    CustomDetailPage,
     SideMenuContentComponent
   ],
   imports: [
@@ -136,6 +140,8 @@ import { SideMenuContentComponent } from '../shared/side-menu-content/side-menu-
     RimediInfusiPage,
     RimediMaceratiPage,
     RimediTisanePage,
+    CustomPostPage,
+    CustomDetailPage,
     BricioleNewsPage
   ],
   providers: [

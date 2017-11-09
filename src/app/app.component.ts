@@ -25,6 +25,9 @@ import { RimediDecottiPage } from '../pages/rimedi-decotti/rimedi-decotti';
 import { RimediInfusiPage } from '../pages/rimedi-infusi/rimedi-infusi';
 import { RimediMaceratiPage } from '../pages/rimedi-macerati/rimedi-macerati';
 import { RimediTisanePage } from '../pages/rimedi-tisane/rimedi-tisane';
+import { CustomPostPage } from '../pages/custom-post/custom-post';
+
+
 
 
 import { StatusBar } from '@ionic-native/status-bar';
@@ -137,6 +140,10 @@ private initializeOptions(): void {
       component: TabsPage,
       selected: true// This option is already selected
     });*/
+    this.options.push({
+      displayName: 'Wiki',
+      component: CustomPostPage
+    });
 
     this.options.push({
       displayName: 'Angolo Vegano',
